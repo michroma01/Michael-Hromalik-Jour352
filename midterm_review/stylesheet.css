@@ -13,3 +13,15 @@
     font-weight: bold;
     font-family: static;   
 }
+
+blockquote {
+    font: 16px/24px normal helvetica, sans-serif;
+    font-style: italic;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: red;
+    margin: 20px 0;
+    margin-left: 50px;
+    padding-left: 15px;
+    border-left: 40px solid white;
+}
