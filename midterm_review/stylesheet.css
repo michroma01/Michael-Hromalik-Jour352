@@ -56,20 +56,20 @@ p {
 
 .EV {
     width: 300px;
-    text-align: center;
+    place-items: center;
 }
 
 .Nepal {
     width: 300px;
-    text-align: center;
+    place-items: center;
 }
 
 .Ghising {
     width: 300px;
-    text-align: center;
+    place-items: center;
 }
 
 .Kathmandu {
     width: 300px;
-    text-align: center;
+    place-items: center;
 }
