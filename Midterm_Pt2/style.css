@@ -3,9 +3,12 @@ h1 {
     font-family: "Lavishly Yours", cursive;
     font-weight: bold;
     font-style: normal;
+    color: green;
+    background-color: yellow;
 }
 
 h2 {
     text-align: center;
     font-weight: bold;
+    color: black;
 }
