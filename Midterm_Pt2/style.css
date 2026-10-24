@@ -15,7 +15,5 @@ h2 {
 }
 
 .img_description {
-    text-align: center;
-    font-style: italic;
-    color: black;
+    text-align: center; 
 }
