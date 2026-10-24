@@ -34,13 +34,39 @@ p {
 
 
 .jack {
-    align-items: center;
+    width: 100%;
 }
 
 .Arnold {
-    align-items: center;
+    width: 100%;
 }
 
 .Hogan {
-    align-items: center;
+    width: 100%;
+}
+
+.Cigarrette {
+    width: 100%; 
+    height: 500px;
+}
+
+.SI {
+    width: 100%;
+    height: 500px;
+}
+
+.Bubba {
+    width: 100%;
+}
+
+.Dent {
+    width: 100%;
+}
+
+.HP {
+    width: 100%;
+}
+
+.GP81 {
+    width: 100%;
 }
