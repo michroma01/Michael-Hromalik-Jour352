@@ -1,5 +1,5 @@
 h1 {
-    box-sizing: border-box;
+    box-sizing: content-box;
     padding: 100%;
     width: 100%;
     text-align: center;
