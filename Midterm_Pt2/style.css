@@ -11,4 +11,11 @@ h2 {
     text-align: center;
     font-weight: bold;
     color: black;
+    opacity: 0.8;
+}
+
+.image_description {
+    text-align: center;
+    font-style: italic;
+    color: black;
 }
