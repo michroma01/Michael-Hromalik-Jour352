@@ -21,3 +21,10 @@ h2 {
     height: 700px;
 }
 
+p {
+    font-size: 14px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+}
+
