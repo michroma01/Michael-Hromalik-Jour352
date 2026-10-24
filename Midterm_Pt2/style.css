@@ -6,6 +6,8 @@ h1 {
     color: green;
     background-color: yellow;
     position: fixed;
+    top: 0px;
+    bottom: 0px;
 }
 
 .content {
