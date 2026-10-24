@@ -29,7 +29,7 @@ p {
 }
 
 .content {
-    box-align: center;
+    align-content: center;
 }
 
 .jack {
