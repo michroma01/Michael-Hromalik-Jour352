@@ -5,6 +5,7 @@ h1 {
     font-style: normal;
     color: green;
     background-color: yellow;
+    position: fixed;
 }
 
 .content {
