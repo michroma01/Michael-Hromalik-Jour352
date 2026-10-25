@@ -47,7 +47,7 @@ p {
 }
 
 .Cigarrette {
-    width: 50%; 
+    width: 0%; 
     height: 300px;
     overflow-clip-margin: content-box;
 }
