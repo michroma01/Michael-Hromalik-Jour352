@@ -47,9 +47,8 @@ p {
 }
 
 .Cigarrette {
-    width: 0%; 
+    max-width: fit-content;  
     height: 300px;
-    overflow-clip-margin: content-box;
 }
 
 .SI {
