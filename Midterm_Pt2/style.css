@@ -31,10 +31,14 @@ p {
 }
 
 blockquote {
-    font-size: 16/24px;
+    font-size: 24px;
     font-family: sans-serif;
     font-style: italic;
     color: green;
+    margin-top: 15px;
+    margin-left: 50px;
+    padding-left: 15px;
+    border-left: 4px;
 }
 
 .img_description {
