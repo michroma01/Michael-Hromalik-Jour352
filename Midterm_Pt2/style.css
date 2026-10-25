@@ -23,6 +23,12 @@ h2 {
     background-color: gray;
 }
 
+#byline {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
 p {
     font-size: 24;
     font-family: "Times New Roman", Times, serif;
