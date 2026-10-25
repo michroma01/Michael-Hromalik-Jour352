@@ -28,6 +28,8 @@ Questions
 
 Google is the best search engine in the world.
 
+<a href="https://www.google.com/" target="_blank">Google</a>
+
 
 
 
@@ -36,14 +38,16 @@ Google is the best search engine in the world.
 
 2.  Describe the purpose of a DIV tag.
 
-
+It allows us to categorize certain items so that we can make certain styles and commands to said items in CSS.
 
 
 
 
 3.  Write out the basic structure of an HTML page, putting the basic tags in the correct position.  (Note: you don't need to connect it to a stylesheet or include DIV tags or anything like that).
 
-
+<!DOCTYPE html>
+<html lang="eng">
+<head></head>
 
 
 
@@ -67,13 +71,13 @@ Google is the best search engine in the world.
 4.  There are two main "areas" or "sections" in the basic structure of an HTML page. In which area would you put a link to a stylesheet?
 
 
-
+You would link the stylsheet in the "head" area.
 
 
 
 5.  In which main "area" or "section" of an HTML page would you put text, images or DIV tags?
 
-
+You would put them in the body section.
 
 
 
@@ -81,7 +85,8 @@ Google is the best search engine in the world.
 6.  In the space below, put one DIV tag with a class of graphicbox and a second DIV tag with an ID of name.
 
 
-
+<div class="graphicbox"></div>
+<div id="name"></div>
 
 
 
@@ -97,7 +102,8 @@ Google is the best search engine in the world.
 
 7.  In the space below, put one DIV tag with an ID of apples and a class of fruit.
 
-
+<div id="apples"></div>
+<div class="fruit"></div>
 
 
 
@@ -108,8 +114,9 @@ Google is the best search engine in the world.
 
 8.  In the space below, write the correct CSS code to target a DIV with a class of fruit.  Make the color of the text black (#000000).
 
-
-
+.fruit {
+    color: #000000;
+}
 
 
 
@@ -125,7 +132,7 @@ Google is the best search engine in the world.
 
 9.  What tag would we use to include an image on an HTML page? Just give me the name of the tag, you don't have to write out all the code.
 
-
+<img src="path" alt="img description">
 
 
 
@@ -134,7 +141,7 @@ Google is the best search engine in the world.
 
 10.  Why do we use media queries?
 
-
+So we can make changes to different elements in different screen sizes. 
 
 
 
@@ -143,8 +150,7 @@ Google is the best search engine in the world.
 
 11. What is the main difference between a serif and a sans-serif font?
 
-
-
+The difference between the two are the stems on the end of letters. 
 
 
 
@@ -155,3 +161,5 @@ Google is the best search engine in the world.
 2. 123,543,242
 3. 101010101
 4. -213
+
+#FFCC33
