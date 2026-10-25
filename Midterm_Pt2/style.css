@@ -30,6 +30,13 @@ p {
     text-align: center;
 }
 
+blockquote {
+    font-size: 16/24px;
+    font-family: sans-serif;
+    font-style: italic;
+    color: green;
+}
+
 .img_description {
     margin: 0 auto;
     width: 100%;
