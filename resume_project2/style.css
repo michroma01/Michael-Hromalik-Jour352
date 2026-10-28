@@ -1,9 +1,13 @@
 body {
-    background-color: aqua;
+    background-color: black;
 }
 
 .lonsomack {
     width: fit-content;
     height: 67%;
     align-content: center;
+}
+
+h3 {
+    color: white;
 }
