@@ -12,10 +12,6 @@
     align-content: center;
 }
 
-#myname {
-    text-align: right;
-}
-
 h2 {
     background-color: blue;
     color: white;
@@ -24,8 +20,7 @@ h2 {
 }
 
 h3 {
-    color: brown;
-    
+    color: black;
 }
 
 li {
