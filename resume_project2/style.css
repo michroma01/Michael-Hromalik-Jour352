@@ -12,6 +12,10 @@ body {
     height: 50%;
 }
 
+.lonsomack {
+    align-items: center;
+}
+
 h2 {
     color: white;
     text-align: center;
