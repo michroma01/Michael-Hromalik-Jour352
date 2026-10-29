@@ -16,6 +16,10 @@ body {
     align-items: center;
 }
 
+#myname {
+    text-align: right;
+}
+
 h2 {
     color: white;
     text-align: center;
