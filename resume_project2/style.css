@@ -7,6 +7,11 @@ body {
     align-content: center;
 }
 
+.container-fluid {
+    align-items: center;
+    height: 50%;
+}
+
 h2 {
     color: white;
 }
