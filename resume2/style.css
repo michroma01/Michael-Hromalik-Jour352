@@ -20,6 +20,7 @@ p {
 }
 
 .pfpme {
+    display:block;
     height: 14x;
     width: 20px;
 }
