@@ -17,6 +17,6 @@ p {
 }
 
 .pfpme {
-    width: 20px;
+    width: fit-content;
     height: 30px;
 }
