@@ -18,7 +18,7 @@ p {
 }
 
 .lonsomack {
-    height: 45px;
+    height: fit-content;
     display: flex;
     align-items: center;
     gap: 15%;
