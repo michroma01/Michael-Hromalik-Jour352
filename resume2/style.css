@@ -17,3 +17,8 @@ p {
     align-items: center;
     gap: 15%;
 }
+
+.pfpme {
+    height: 10px;
+    width: 5px;
+}
