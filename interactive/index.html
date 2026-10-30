@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Graphic</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #111;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        canvas {
+            display: block;
+        }
+        .instructions {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 12px 18px;
+            border-radius: 8px;
+            pointer-events: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions">✨ Click or drag your mouse around the screen!</div>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Resize canvas to fill the window
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        let particles = [];
+
+        // Particle Class
+        class Particle {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                this.size = Math.random() * 15 + 5;
+                this.speedX = Math.random() * 4 - 2;
+                this.speedY = Math.random() * 4 - 2;
+                // Generates random neon colors using HSL
+                this.color = `hsl(${Math.random() * 360}, 100%, 60%)`;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.size > 0.2) this.size -= 0.15; // Shrink over time
+            }
+            draw() {
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        // Handle particle creation and cleanup
+        function handleParticles() {
+            for (let i = 0; i < particles.length; i++) {
+                particles[i].update();
+                particles[i].draw();
+                // Remove particles that have shrunk away
+                if (particles[i].size <= 0.3) {
+                    particles.splice(i, 1);
+                    i--;
+                }
+            }
+        }
+
+        // Spawn particles on mouse move
+        window.addEventListener('mousemove', function(e) {
+            for (let i = 0; i < 2; i++) {
+                particles.push(new Particle(e.x, e.y));
+            }
+        });
+
+        // Spawn extra burst of particles on click
+        window.addEventListener('click', function(e) {
+            for (let i = 0; i < 20; i++) {
+                particles.push(new Particle(e.x, e.y));
+            }
+        });
+
+        // Animation Loop
+        function animate() {
+            // Creates a trailing effect by leaving a semi-transparent background
+            ctx.fillStyle = 'rgba(17, 17, 17, 0.15)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            handleParticles();
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
+</body>
+</html>
