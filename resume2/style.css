@@ -3,5 +3,22 @@
 }
 
 .container-fluid {
-    align-items: center;
+    align-content: center;
+}
+
+h2 {
+    background-color: blue;
+    color: white
+}
+
+h3 {
+    color: black;
+}
+
+li {
+    color: black;
+}
+
+p {
+    color: black;
 }
