@@ -2,10 +2,6 @@
     align-items: center;
 }
 
-.container-fluid {
-    align-content: center;
-}
-
 h2 {
     background-color: blue;
     color: white
