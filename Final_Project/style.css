@@ -29,3 +29,9 @@ p {
     height: auto;
     align-items: center;
 }
+
+figcaption {
+    font-size: 0.8em;
+    text-align: center;
+    font-family: sans-serif, georgia;
+}
