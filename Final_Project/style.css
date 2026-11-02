@@ -36,6 +36,6 @@ figcaption {
     font-family: sans-serif, georgia;
 }
 
-.footer-container {
-    font-family: sans-serif, georgia;
+.text-muted {
+    color: white;
 }
