@@ -39,3 +39,7 @@ figcaption {
 .text-muted {
     color: white;
 }
+
+iframe {
+    margin: 20px 0;
+}
